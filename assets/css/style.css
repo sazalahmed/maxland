@@ -223,7 +223,7 @@ button {
     font-family: var(--paraFont);
     padding: 5px 5px 5px 32px;
     color: var(--colorWhite);
-    background: var(--colorBlue);
+    background: var(--colorOrange);
     border-radius: 40px;
     position: relative;
     overflow: hidden;
@@ -244,7 +244,7 @@ button {
     height: 45px;
     line-height: 45px;
     text-align: center;
-    color: var(--colorBlue);
+    color: var(--colorOrange);
     background: var(--colorWhite);
     margin-left: 12px;
     border-radius: 30px;
@@ -340,8 +340,8 @@ button {
 .nextArrow,
 .nextArrow:hover,
 .prevArrow:hover {
-    background: var(--colorBlue);
-    border-color: var(--colorBlue);
+    background: var(--colorOrange);
+    border-color: var(--colorOrange);
     color: var(--colorWhite);
 }
 
@@ -1488,7 +1488,7 @@ button {
 .single_property_img .feature_link.feature {
     top: 60px;
     padding: 2px 15px;
-    background: var(--colorOrange);
+    background: var(--colorBlue);
 }
 
 .single_property_img .feature_link:hover {
@@ -2189,17 +2189,18 @@ button {
     HOME PAGE 02 START
 =============================*/
 .home_2 .item_title:hover {
-    color: var(--colorBlue);
+    color: var(--colorOrange);
     text-decoration: none;
 }
 
 .home_2 .read_btn:hover {
-    color: var(--colorBlue);
+    color: var(--colorOrange);
 }
 
 /* main_manu_2 start */
 .main_menu_2 {
     background: var(--colorLightBg);
+    top: 0;
 }
 
 .main_menu_2.menu_fix {
@@ -2210,15 +2211,20 @@ button {
     color: var(--colorBlack);
 }
 
+.main_menu_2 .navbar-nav .nav-item:hover .nav-link,
+.main_menu_2 .navbar-nav .nav-item .nav-link.active {
+    color: var(--colorOrange);
+}
+
 .main_menu_2 .navbar-nav .nav-item .nav-link::after {
-    background: var(--colorBlue);
+    background: var(--colorOrange);
 }
 
 .main_menu_2 .droap_menu li a:hover,
 .main_menu_2 .droap_menu li a.active,
 .main_menu_2 .droap_menu li a:hover::after,
 .main_menu_2 .droap_menu li a.active::after {
-    color: var(--colorBlue);
+    color: var(--colorOrange);
 }
 
 .main_menu_2 .user_call {
@@ -2241,7 +2247,8 @@ button {
 .main_menu_2 .main_manu_btn a {
     border-radius: 36px;
     color: var(--colorWhite);
-    background: var(--colorBlue);
+    background: var(--colorOrange);
+    /* color: var(--colorBlack); */
     -webkit-border-radius: 36px;
     -moz-border-radius: 36px;
     -ms-border-radius: 36px;
@@ -2286,6 +2293,11 @@ button {
 
 .main_menu_2 .toggol_bar:hover .toggol_bar_1 {
     width: 14px;
+}
+
+.main_menu_2 .toggol_bar_1,
+.main_menu_2 .toggol_bar_2 {
+    background: var(--colorLightBg) !important;
 }
 
 .home_2 .menu_offcanvas .btn-close,
@@ -2360,7 +2372,7 @@ button {
     line-height: 30px;
     margin-top: 13px;
     margin-bottom: 40px;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .banner_2_search {
@@ -2400,9 +2412,9 @@ button {
 
 .banner_2_search .nav-link.active,
 .banner_2_search .show>.nav-link {
-    color: var(--colorBlack);
+    color: var(--colorOrange);
     background: transparent;
-    border-color: var(--colorBlue);
+    border-color: var(--colorOrange);
 }
 
 .banner_2_search .tab-content {
@@ -2440,7 +2452,7 @@ button {
 }
 
 .banner_2_search .banner_input_btn {
-    background: var(--colorBlue);
+    background: var(--colorOrange);
     color: var(--colorWhite);
 }
 
@@ -2484,7 +2496,7 @@ button {
 
 .single_amenites li a:hover {
     color: var(--colorWhite);
-    background: var(--colorBlue);
+    background: var(--colorOrange);
 }
 
 .single_amenites li a:hover span {
@@ -2557,7 +2569,7 @@ button {
 
 .single_property_2 .property_price {
     font-size: 14px;
-    background: var(--colorBlue);
+    background: var(--colorOrange);
     color: var(--colorWhite);
     padding: 0px 10px;
     top: -14px;
@@ -2899,7 +2911,7 @@ button {
 
 .enquiry_form .enquiry_form_input button {
     margin-top: 25px;
-    background: var(--colorBlue);
+    background: var(--colorOrange);
     color: var(--colorWhite);
 }
 
@@ -2922,13 +2934,13 @@ button {
 }
 
 .client_feedback_text_right {
-    color: var(--colorBlack);
+    color: var(--colorOrange);
     font-family: var(--headingFont);
     font-size: 16px;
     font-weight: 700;
     display: inline;
     float: right;
-    border-bottom: 1px solid var(--colorBlue);
+    border-bottom: 1px solid var(--colorOrange);
     margin-bottom: 10px;
 }
 
@@ -3084,10 +3096,11 @@ button {
     -moz-transition: all linear .15s;
     -ms-transition: all linear .15s;
     -o-transition: all linear .15s;
+    filter: brightness(0) saturate(100%) invert(57%) sepia(51%) saturate(6038%) hue-rotate(344deg) brightness(96%) contrast(97%);
 }
 
 .testimonial .slick-dots .slick-active button {
-    background: var(--colorBlue);
+    background: var(--colorOrange);
 }
 
 .testimonial .slick-dots .slick-active button::after {
@@ -3241,7 +3254,7 @@ button {
     position: absolute;
     width: 45px;
     height: 45px;
-    background: var(--colorBlue);
+    background: var(--colorOrange);
     line-height: 45px;
     color: var(--colorWhite);
     border-radius: 50%;
@@ -4130,8 +4143,8 @@ button {
     line-height: 32px;
     text-align: center;
     margin: 0px 3px;
-    color: var(--colorBlack);
-    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    background: var(--colorOrange);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
